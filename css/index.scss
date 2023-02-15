@@ -1,0 +1,39 @@
+// Navigation header
+#navigation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .938rem;
+
+        & .logo {
+            font-weight: bold;
+            padding: 2rem 3.563rem;
+        }
+
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & li {
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    & .dropdown-select-container {
+        width: 5rem;
+        margin-right: 1.5rem;
+        padding: .75rem;
+        border-radius: 3.75rem;
+    }
+}

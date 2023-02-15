@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #6248FF;
+  --secondary-color: rgba(98, 72, 255, .08);
+  --light-purple: #7181FC;
+  --red: #EB5757;
+  --green: #0EAC00;
+  --dark-gray: #333;
+  --medium-gray: #4F4F4F;
+  --light-gray: #828282;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--white);
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.875;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.813rem 1.5rem;
+  border: none;
+  border-radius: 3.75rem;
+  background: var(--primary-color);
+  color: var(--white);
+}
+.button:hover {
+  background: var(--light-purple);
+}/*# sourceMappingURL=style.css.map */
