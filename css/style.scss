@@ -31,7 +31,6 @@ body {
     color: var(--dark-gray);
     font-size: 1.125rem;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.875;
 }
 
 .button {
@@ -47,4 +46,13 @@ body {
     &:hover {
         background: var(--light-purple);
     }
+}
+
+.main-title {
+    font-size: 3.5rem;
+}
+
+.highlighted-text {
+    max-width: fit-content;
+    background: var(--secondary-color);
 }

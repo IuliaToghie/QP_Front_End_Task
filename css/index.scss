@@ -7,6 +7,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 100;
 
     & nav {
         display: flex;
@@ -42,7 +43,7 @@
     }
 }
 
-// Showcase
+// Showcase container
 #showcase {
     background: var(--secondary-color);
     display: flex;
@@ -55,12 +56,11 @@
         & .showcase-title {
             font-size: 4rem;
             margin-bottom: 3rem;
-            line-height: 1.1;
             width: 70%;
         }
 
         & .showcase-content {
-            width: 50%;
+            width: 48%;
             line-height: 1.6;
             color: var(--light-gray);
             margin-bottom: 3rem;
@@ -68,6 +68,92 @@
 
         & .showcase-button {
             padding: 1.25rem 4rem;
+        }
+    }
+}
+
+// Timeline container
+#timeline {
+    padding: 7.5rem;
+
+    & .main-title.highlighted-text {
+        margin-bottom: 4.25rem;
+    }
+
+    & .card {
+        position: relative;
+        max-width: 500px;
+
+        &:nth-child(even) {
+            margin-left: 50%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            border: dashed var(--primary-color);
+        }
+    
+        &:nth-child(1)::before {
+            width: 27%;
+            bottom: 50%;
+            left: 100%;
+            border-width: 3px 0 3px 3px;
+        }
+    
+        &:nth-child(2n)::before {
+            top: -51%;
+            bottom: 100%;
+            border-width: 3px 3px 0 0;
+            border-radius: 0 50px 0 0;
+        }
+    
+        &:nth-child(3)::before {
+            top: -51%;
+            bottom: 100%;
+            left: 50%;
+            width: 77%;
+            border-width: 3px 0 0 3px;
+            border-radius: 50px 0 0 0;
+        }
+    
+        &:nth-child(4)::before {
+            width: 77%;
+            right: 50%;
+        }
+    
+        &:first-child::before {
+            border-top: 0;
+            border-top-left-radius: 0;
+        }
+
+        & .info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid var(--primary-color);
+            border-radius: 1.875rem;
+            padding: 2rem;
+
+            & span {
+                color: var(--primary-color);
+                font-size: .938rem;
+                margin-bottom: .5rem;
+            }
+
+            & .title {
+                color: var(--dark-gray);
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                position: relative;
+            }
+
+            & p {
+                font-size: 1.125rem;
+                line-height: 1.6;
+            }
         }
     }
 }
