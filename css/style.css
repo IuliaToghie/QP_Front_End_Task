@@ -47,6 +47,11 @@ body {
   background: var(--light-purple);
 }
 
+.wrapper-conatiner {
+  padding: 0 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
 .main-title {
   font-size: 3.5rem;
 }
@@ -55,4 +60,8 @@ body {
   max-width: -moz-fit-content;
   max-width: fit-content;
   background: var(--secondary-color);
+}
+
+.main-title.highlighted-text {
+  margin-bottom: 4.25rem;
 }/*# sourceMappingURL=style.css.map */
