@@ -40,17 +40,18 @@
   background: var(--secondary-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100vh;
   padding: 6.25rem 7.5rem;
+}
+#showcase .showcase-container {
+  width: 40%;
 }
 #showcase .showcase-container .showcase-title {
   font-size: 4rem;
   margin-bottom: 3rem;
-  width: 70%;
 }
 #showcase .showcase-container .showcase-content {
-  width: 48%;
   line-height: 1.6;
   color: var(--light-gray);
   margin-bottom: 3rem;
@@ -65,32 +66,35 @@
 #timeline .main-title.highlighted-text {
   margin-bottom: 4.25rem;
 }
-#timeline .card {
+#timeline .cards-container {
+  width: 1280px;
+}
+#timeline .cards-container .card {
   position: relative;
   max-width: 500px;
 }
-#timeline .card:nth-child(even) {
+#timeline .cards-container .card:nth-child(even) {
   margin-left: 50%;
 }
-#timeline .card::before {
+#timeline .cards-container .card::before {
   content: "";
   position: absolute;
   width: 50%;
   border: dashed var(--primary-color);
 }
-#timeline .card:nth-child(1)::before {
+#timeline .cards-container .card:nth-child(1)::before {
   width: 27%;
   bottom: 50%;
   left: 100%;
   border-width: 3px 0 3px 3px;
 }
-#timeline .card:nth-child(2n)::before {
+#timeline .cards-container .card:nth-child(2n)::before {
   top: -51%;
   bottom: 100%;
   border-width: 3px 3px 0 0;
   border-radius: 0 50px 0 0;
 }
-#timeline .card:nth-child(3)::before {
+#timeline .cards-container .card:nth-child(3)::before {
   top: -51%;
   bottom: 100%;
   left: 50%;
@@ -98,15 +102,15 @@
   border-width: 3px 0 0 3px;
   border-radius: 50px 0 0 0;
 }
-#timeline .card:nth-child(4)::before {
+#timeline .cards-container .card:nth-child(4)::before {
   width: 77%;
   right: 50%;
 }
-#timeline .card:first-child::before {
+#timeline .cards-container .card:first-child::before {
   border-top: 0;
   border-top-left-radius: 0;
 }
-#timeline .card .info {
+#timeline .cards-container .card .info {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -115,18 +119,18 @@
   border-radius: 1.875rem;
   padding: 2rem;
 }
-#timeline .card .info span {
+#timeline .cards-container .card .info span {
   color: var(--primary-color);
   font-size: 0.938rem;
   margin-bottom: 0.5rem;
 }
-#timeline .card .info .title {
+#timeline .cards-container .card .info .title {
   color: var(--dark-gray);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   position: relative;
 }
-#timeline .card .info p {
+#timeline .cards-container .card .info p {
   font-size: 1.125rem;
   line-height: 1.6;
 }/*# sourceMappingURL=index.css.map */
