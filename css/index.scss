@@ -36,9 +36,7 @@
     }
 
     & .dropdown-select-container {
-        width: 5rem;
         margin-right: 1.5rem;
-        padding: .75rem;
         border-radius: 3.75rem;
     }
 }
@@ -221,12 +219,40 @@
         left: -100%;
         top: 100%;
     }
-
-    & .carousel-indicators {
-        margin-bottom: 3rem;
-    }
 }
 
-.slides-numbers {
-    display: block;
+// QA container
+#questions .questions-wrapper {
+    width: 80%;
+    margin: 0 auto;
+
+    & .qa-section {
+        width: 100%;
+        border: 2px solid var(--primary-color);
+        border-radius: 1.25rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & .question {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--dark-gray);
+        }
+
+        & .answer {
+            font-size: 1rem;
+            color: var(--medium-gray);
+        }
+
+        & .show-more,
+        & .show-less {
+            border: none;
+            background: none;
+            font-size: 2rem;
+        }
+    }
 }
