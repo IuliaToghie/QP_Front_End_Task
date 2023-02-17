@@ -8,12 +8,6 @@
 #navigation-header nav {
   font-size: 0.938rem;
 }
-#navigation-header nav .logo {
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--dark-gray);
-  padding: 2rem 3.563rem;
-}
 #navigation-header nav ul {
   margin: 0;
   padding: 0;
@@ -252,4 +246,33 @@
 #contact-form.contact-form-container .right-side-container .button {
   margin: 0 auto;
   padding: 0.813rem 4rem;
+}
+
+#footer {
+  padding: 2rem 7.5rem;
+  margin-bottom: 0;
+}
+#footer .top-footer {
+  margin-bottom: 3rem;
+}
+#footer .top-footer .footer-section {
+  width: 25%;
+}
+#footer .top-footer li {
+  margin-bottom: 1rem;
+}
+#footer .top-footer li:last-child {
+  margin-bottom: 0;
+}
+#footer .top-footer li .item {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--medium-gray);
+}
+#footer .bottom-footer * {
+  margin: 0;
+}
+#footer .bottom-footer .footer-nav {
+  text-decoration: none;
+  color: var(--dark-gray);
 }/*# sourceMappingURL=index.css.map */

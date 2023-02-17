@@ -9,13 +9,6 @@
   & nav {
     font-size: .938rem;
 
-    & .logo {
-      font-weight: bold;
-      text-decoration: none;
-      color: var(--dark-gray);
-      padding: 2rem 3.563rem;
-    }
-
     & ul {
       margin: 0;
       padding: 0;
@@ -313,6 +306,45 @@
     & .button {
       margin: 0 auto;
       padding: .813rem 4rem;
+    }
+  }
+}
+
+// Footer
+#footer {
+  padding: 2rem 7.5rem;
+  margin-bottom: 0;
+
+  & .top-footer {
+    margin-bottom: 3rem;
+    
+    & .footer-section {
+      width: 25%;
+    }
+
+    & li {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & .item {
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--medium-gray);
+      }
+    }
+  }
+
+  & .bottom-footer {
+    & * {
+      margin: 0;
+    }
+
+    & .footer-nav {
+      text-decoration: none;
+      color: var(--dark-gray);
     }
   }
 }
