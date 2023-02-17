@@ -199,9 +199,16 @@
 #questions .questions-wrapper .qa-section .answer {
   font-size: 1rem;
   color: var(--medium-gray);
+  display: none;
 }
-#questions .questions-wrapper .qa-section .show-more, #questions .questions-wrapper .qa-section .show-less {
+#questions .questions-wrapper .qa-section .answer[data-menu-state=enabled] {
+  display: block;
+}
+#questions .questions-wrapper .qa-section .toggle-button {
   border: none;
   background: none;
   font-size: 2rem;
+}
+#questions .questions-wrapper .qa-section .question, #questions .questions-wrapper .qa-section .toggle-button {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
