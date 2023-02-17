@@ -56,6 +56,19 @@ body {
   font-size: 3.5rem;
 }
 
+.subtitle {
+  font-size: 1.125rem;
+}
+
+.content {
+  font-size: 1rem;
+}
+
+.subtitle,
+.content {
+  color: var(--medium-gray);
+}
+
 .highlighted-text {
   max-width: -moz-fit-content;
   max-width: fit-content;

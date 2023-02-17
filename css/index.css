@@ -203,6 +203,8 @@
 }
 #questions .questions-wrapper .qa-section .answer[data-menu-state=enabled] {
   display: block;
+  margin-bottom: 0;
+  width: 70%;
 }
 #questions .questions-wrapper .qa-section .toggle-button {
   border: none;
@@ -211,4 +213,43 @@
 }
 #questions .questions-wrapper .qa-section .question, #questions .questions-wrapper .qa-section .toggle-button {
   display: flex;
+}
+
+#contact-form.contact-form-container {
+  background: var(--secondary-color);
+  margin-bottom: 0;
+  padding: 7.5rem;
+}
+#contact-form.contact-form-container .left-side-container {
+  width: 40%;
+}
+#contact-form.contact-form-container .left-side-container .title-container {
+  margin-bottom: 3rem;
+}
+#contact-form.contact-form-container .right-side-container {
+  width: 45%;
+  padding: 5rem;
+  background: var(--white);
+  border: 2px solid var(--primary-color);
+  border-radius: 1.25rem;
+}
+#contact-form.contact-form-container .right-side-container .form-group {
+  margin-bottom: 1.5rem;
+}
+#contact-form.contact-form-container .right-side-container .form-control, #contact-form.contact-form-container .right-side-container textarea {
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+#contact-form.contact-form-container .right-side-container .form-control:focus, #contact-form.contact-form-container .right-side-container textarea:focus {
+  outline: 0;
+  border: 2px solid var(--primary-color);
+  box-shadow: none;
+}
+#contact-form.contact-form-container .right-side-container textarea {
+  margin-bottom: 2.5rem;
+}
+#contact-form.contact-form-container .right-side-container .button {
+  margin: 0 auto;
+  padding: 0.813rem 4rem;
 }/*# sourceMappingURL=index.css.map */
