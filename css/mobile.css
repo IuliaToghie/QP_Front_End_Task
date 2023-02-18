@@ -1,0 +1,45 @@
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #showcase {
+    padding: 10rem 2rem 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+  #showcase .showcase-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #showcase .showcase-container .showcase-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  #showcase .showcase-container .button {
+    margin-bottom: 2rem;
+  }
+  #showcase .showcase-container .showcase-image {
+    width: 70%;
+    height: 70%;
+  }
+  #timeline .cards-container .card {
+    max-width: 300px;
+    margin: 0 0 2rem;
+  }
+  #timeline .cards-container .card :last-child {
+    margin: 0;
+  }
+  #timeline .cards-container .card::before, #timeline .cards-container .card::after {
+    display: none;
+  }
+  #timeline .cards-container .card:nth-child(even) {
+    margin-left: 0;
+  }
+  .wrapper-container {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=mobile.css.map */
